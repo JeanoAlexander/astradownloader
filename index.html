@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Downloader - Unduh Video Dari Mana Saja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="background-animation"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Astra Downloader</h1>
+            <p class="subtitle">Sistem Unduh Terintegrasi Masa Depan</p>
+        </header>
+
+        <main class="main-content">
+            <div class="form-container">
+                <input type="url" id="videoUrl" placeholder="Tempelkan URL video di sini...">
+                <button id="downloadBtn">
+                    <span class="btn-text">PROSES</span>
+                    <span class="btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </span>
+                </button>
+            </div>
+
+            <div id="status">
+                <div class="loader" id="loader" style="display: none;">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <p id="statusText"></p>
+            </div>
+            
+            <div id="results" class="results-container"></div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 AIO Downloader. Powered by Futuristech.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
